@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/fondo"
+        >
+
+
+        <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Feliz Dia de Andalucia!"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/andalucia" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="La bandera blanca y verde \n vuelve, tras siglos de guerra,\n a decir paz y esperanza,\n bajo el sol de nuestra tierra.\n"
+                    android:textSize="20sp"
+                    android:textColor="@color/andalucia"
+                    />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="¡Andaluces, levantaos! \n ¡Pedid tierra y libertad! \n ¡Sea por Andalucía libre, \n España y la Humanidad!"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="Los andaluces queremos \n volver a ser lo que fuimos \n hombres de luz, que a los hombres, \n alma de hombres les dimos."
+                    android:textSize="20sp"
+                    android:textColor="@color/andalucia"
+                    />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="¡Andaluces, levantaos! \n ¡Pedid tierra y libertad! \n ¡Sea por Andalucía libre,\n España y la Humanidad!"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnMusic"
+                android:contentDescription="Activar el himno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fef7ff"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_music" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
